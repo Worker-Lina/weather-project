@@ -9,7 +9,7 @@ export const fetchWeather = createAsyncThunk<
     ChartData[],
     string | undefined,
     ThunkConfig<string>
->('weather/fetchWeather', async (props, thunkApi) => {
+>('weather/fetchWeather', async (_, thunkApi) => {
     const { extra, rejectWithValue, getState } = thunkApi;
     const city = getSelectCity(getState());
     

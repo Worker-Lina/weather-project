@@ -1,4 +1,3 @@
-import React from "react";
 
 // Солнечная погода
 const Sunny = (

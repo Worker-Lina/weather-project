@@ -7,7 +7,7 @@ export const fetchCities = createAsyncThunk<
     City[],
     string | undefined,
     ThunkConfig<string>
->('city/fetchCities', async (props, thunkApi) => {
+>('city/fetchCities', async (_, thunkApi) => {
     const { extra, rejectWithValue, getState } = thunkApi;
     const search = getCitySearch(getState());
 

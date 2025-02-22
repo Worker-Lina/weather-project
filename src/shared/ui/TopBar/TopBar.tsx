@@ -1,7 +1,6 @@
 import { memo } from 'react';
 import styled from 'styled-components';
 import { H1 } from '../Headlines';
-import { SelectCity } from '../../../features/selectCity';
 
 const TopBarStyled = styled.div`
     display: flex;
